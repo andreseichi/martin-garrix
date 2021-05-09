@@ -65,45 +65,47 @@
       background-color: white;
       margin-top: 30px;
       z-index: 10;
+      transition: background-color 0.3s ease;
 
       .btn-content {
+        width: 100%;
         font-size: $header4;
         padding: 1.5rem 3.2rem;
+        font-weight: 800;
+      }
+
+      &:hover {
+        background-color: #bac0cc;
       }
     }
   }
-}
 
-.btn .btn-content {
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  font-weight: 800;
-}
+  .scroll-indicator {
+    height: 100%;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 0;
+    z-index: 11;
 
-.scroll-indicator {
-  height: 100%;
-  font-weight: 800;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 1rem 0;
-  z-index: 11;
-}
+    p {
+      font-size: $text;
+      margin-bottom: 1rem;
+    }
 
-.scroll-indicator p {
-  margin-bottom: 1rem;
-}
+    .icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-.scroll-indicator .icons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.scroll-indicator .icon-arrow {
-  transform: rotate(90deg);
+      .icon-arrow {
+        transform: rotate(90deg);
+      }
+    }
+  }
 }
