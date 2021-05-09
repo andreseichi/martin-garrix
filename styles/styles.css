@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: 6.4rem;
 }
 
 h3 {
@@ -266,6 +266,10 @@ button {
           transform: rotate(90deg);
 }
 
+.top-releases {
+  min-height: 100vh;
+}
+
 .top-releases .scroll-wrapper {
   width: 100%;
   display: -webkit-box;
@@ -278,5 +282,67 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.top-releases .scroll-wrapper .top-releases-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10vh;
+  padding: 0 10rem;
+}
+
+.top-releases .scroll-wrapper .top-releases-header h2 {
+  font-size: 6.4rem;
+  text-transform: uppercase;
+}
+
+.top-releases .scroll-wrapper .top-releases-header a {
+  font-size: 2rem;
+}
+
+.top-releases .scroll-wrapper .top-releases-header .description-wrapper {
+  max-width: 55rem;
+  padding-left: 8rem;
+}
+
+.top-releases .scroll-wrapper .top-releases-header .description-wrapper p {
+  font-size: 2rem;
+}
+
+.top-releases .scroll-wrapper .inner-scroll-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.top-releases .scroll-wrapper .inner-scroll-wrapper .top-releases-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top-releases .scroll-wrapper .inner-scroll-wrapper .top-releases-row .release {
+  padding: 0 4rem;
+}
+
+.top-releases img {
+  width: 300px;
 }
 /*# sourceMappingURL=styles.css.map */

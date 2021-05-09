@@ -1,8 +1,56 @@
 .top-releases {
-    .scroll-wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  min-height: 100vh;
+  .scroll-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .top-releases-header {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10vh;
+      padding: 0 10rem;
+
+      h2 {
+        font-size: $header2;
+        text-transform: uppercase;
+      }
+
+      a {
+        font-size: $header4;
+      }
+
+      .description-wrapper {
+        max-width: 55rem;
+        padding-left: 8rem;
+
+        p {
+          font-size: $header4;
+        }
+      }
     }
+
+    .inner-scroll-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5rem;
+
+      .top-releases-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .release {
+          padding: 0 4rem;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 300px;
+  }
 }
