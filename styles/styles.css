@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3.2rem;
+  font-size: 3rem;
 }
 
 h4,
@@ -86,7 +86,6 @@ button {
 
 .navigation .navigation-btn {
   color: white;
-  text-transform: uppercase;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -113,13 +112,13 @@ button {
 }
 
 .navigation .navigation-btn .icon span:nth-child(2) {
-  top: 19px;
+  top: 20px;
 }
 
 .navigation .navigation-btn .menu-text {
   font-weight: 800;
   line-height: 48px;
-  font-size: 3.2rem;
+  font-size: 3rem;
 }
 
 .hero {
