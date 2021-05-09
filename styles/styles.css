@@ -14,11 +14,12 @@ body {
 }
 
 h1 {
-  font-size: 12rem;
+  font-size: 10rem;
+  font-weight: 800;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 h3 {
@@ -143,7 +144,7 @@ button {
   position: relative;
 }
 
-.container::before {
+.hero::before {
   content: "";
   position: absolute;
   left: 0;
@@ -151,6 +152,7 @@ button {
   right: 0;
   width: 100%;
   height: 15%;
+  pointer-events: none;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 17, 22, 0)), to(rgba(15, 17, 22, 0.8)));
   background: linear-gradient(180deg, rgba(15, 17, 22, 0) 0%, rgba(15, 17, 22, 0.8) 100%);
 }
@@ -172,7 +174,7 @@ button {
   pointer-events: none;
 }
 
-.hero-info {
+.hero .hero-info {
   margin-bottom: 10vh;
   font-size: 3rem;
   color: white;
@@ -180,29 +182,34 @@ button {
   letter-spacing: 0.5rem;
 }
 
-.hero-info-head {
-  font-size: 10rem;
-  font-weight: 800;
+.hero .hero-info .hero-info-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1rem;
 }
 
-.hero-info p {
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  margin-bottom: 3rem;
+.hero .hero-info .hero-info-head h3 {
+  letter-spacing: 0.3rem;
 }
 
-.btn {
+.hero .hero-info .btn {
   color: black;
-  margin-top: 30px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   background-color: white;
-  text-transform: uppercase;
-  text-align: center;
-  cursor: pointer;
+  margin-top: 30px;
   z-index: 10;
+}
+
+.hero .hero-info .btn .btn-content {
+  font-size: 2rem;
+  padding: 1.5rem 3.2rem;
 }
 
 .btn .btn-content {
