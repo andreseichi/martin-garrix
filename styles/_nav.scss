@@ -8,11 +8,18 @@
   padding: 40px 48px;
   left: 0;
   right: 0;
+  overflow: hidden;
+  pointer-events: none;
+
+  .home-button {
+    pointer-events: all;
+  }
 
   .navigation-btn {
     color: white;
     align-items: center;
     background: transparent;
+    pointer-events: all;
 
     .icon {
       height: 32px;
