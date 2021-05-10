@@ -337,6 +337,7 @@ button {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 10vh;
+  margin-bottom: 10rem;
   padding: 0 10rem;
 }
 
@@ -372,6 +373,7 @@ button {
 
 .top-releases .scroll-wrapper .top-releases-header .description-wrapper p {
   font-size: 2rem;
+  font-weight: 400;
 }
 
 .top-releases .scroll-wrapper .inner-scroll-wrapper {
