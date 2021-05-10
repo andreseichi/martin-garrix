@@ -10,22 +10,37 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       margin-top: 10vh;
       padding: 0 10rem;
 
-      h2 {
-        font-size: $header2;
-        text-transform: uppercase;
-      }
+      .left {
+        h2 {
+          font-size: $header2;
+          text-transform: uppercase;
+        }
 
-      a {
-        font-size: $header4;
+        .btn-black {
+          font-size: $header4;
+          background: transparent;
+          box-shadow: none;
+          border: 0;
+          outline: none;
+          cursor: pointer;
+          display: inline-flex;
+          color: black;
+          background-color: white;
+          text-transform: uppercase;
+          text-align: center;
+          cursor: pointer;
+          z-index: 10;
+        }
       }
 
       .description-wrapper {
         max-width: 55rem;
-        padding-left: 8rem;
+        padding-top: 2rem;
+        padding-left: 12rem;
 
         p {
           font-size: $header4;

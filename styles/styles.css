@@ -67,6 +67,60 @@ button {
   z-index: 10;
 }
 
+.btn {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  z-index: 10;
+  letter-spacing: 0;
+}
+
+.btn .btn-content {
+  color: black;
+  background-color: white;
+  width: 100%;
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+  font-weight: 800;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.btn .btn-content:hover {
+  background-color: #bac0cc;
+}
+
+.btn-black {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  z-index: 10;
+  letter-spacing: 0;
+}
+
+.btn-black .btn-content {
+  color: white;
+  background-color: black;
+  width: 100%;
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+  font-weight: 800;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.btn-black .btn-content:hover {
+  background-color: #2B2B2B;
+}
+
 .navigation {
   position: fixed;
   z-index: 20;
@@ -83,6 +137,12 @@ button {
   padding: 40px 48px;
   left: 0;
   right: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.navigation .home-button {
+  pointer-events: all;
 }
 
 .navigation .navigation-btn {
@@ -91,6 +151,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   background: transparent;
+  pointer-events: all;
 }
 
 .navigation .navigation-btn .icon {
@@ -200,26 +261,6 @@ button {
   letter-spacing: 0.3rem;
 }
 
-.hero .hero-info .btn {
-  color: black;
-  background-color: white;
-  margin-top: 30px;
-  z-index: 10;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
-
-.hero .hero-info .btn .btn-content {
-  width: 100%;
-  font-size: 2rem;
-  padding: 1.5rem 3.2rem;
-  font-weight: 800;
-}
-
-.hero .hero-info .btn:hover {
-  background-color: #bac0cc;
-}
-
 .hero .scroll-indicator {
   height: 100%;
   font-weight: 800;
@@ -292,25 +333,41 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-top: 10vh;
   padding: 0 10rem;
 }
 
-.top-releases .scroll-wrapper .top-releases-header h2 {
+.top-releases .scroll-wrapper .top-releases-header .left h2 {
   font-size: 6.4rem;
   text-transform: uppercase;
 }
 
-.top-releases .scroll-wrapper .top-releases-header a {
+.top-releases .scroll-wrapper .top-releases-header .left .btn-black {
   font-size: 2rem;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .top-releases .scroll-wrapper .top-releases-header .description-wrapper {
   max-width: 55rem;
-  padding-left: 8rem;
+  padding-top: 2rem;
+  padding-left: 12rem;
 }
 
 .top-releases .scroll-wrapper .top-releases-header .description-wrapper p {
