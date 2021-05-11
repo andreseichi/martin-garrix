@@ -33,7 +33,7 @@ const getTopTracks = async () => {
   const result = await fetch(url, options);
   const data = await result.json();
   const tracks = await data.tracks;
-  console.log(tracks);
+  // console.log(tracks);
 
   const divReleases = document.querySelector(".top-releases-row");
   tracks.forEach((music) => {
