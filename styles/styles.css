@@ -313,6 +313,7 @@ button {
 
 .top-releases {
   min-height: 100vh;
+  position: relative;
 }
 
 .top-releases .scroll-wrapper {
@@ -327,6 +328,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 10vh;
 }
 
 .top-releases .scroll-wrapper .top-releases-header {
@@ -371,8 +373,9 @@ button {
 
 .top-releases .scroll-wrapper .top-releases-header .description-wrapper {
   max-width: 55rem;
-  padding-top: 2rem;
-  padding-left: 12rem;
+  margin-left: 10rem;
+  padding: 3rem;
+  background-color: white;
 }
 
 .top-releases .scroll-wrapper .top-releases-header .description-wrapper p {
@@ -388,7 +391,6 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 5rem;
 }
 
 .top-releases .scroll-wrapper .inner-scroll-wrapper .top-releases-row {
@@ -408,13 +410,23 @@ button {
   max-width: -moz-max-content;
   max-width: max-content;
   position: relative;
-  margin: 0 8rem 8rem;
+  margin: 0 8rem 6rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
   -webkit-box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
           box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+.top-releases .scroll-wrapper .inner-scroll-wrapper .top-releases-row .release::before {
+  content: "";
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(64.06%, rgba(0, 0, 0, 0)), to(#161616));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 64.06%, #161616 100%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 .top-releases .scroll-wrapper .inner-scroll-wrapper .top-releases-row .release .controls {
@@ -429,10 +441,36 @@ button {
 
 .top-releases .scroll-wrapper .inner-scroll-wrapper .top-releases-row .release .controls .release-info {
   text-align: left;
+  text-transform: uppercase;
   color: white;
 }
 
 .top-releases img {
   width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top-releases .pattern {
+  background-image: url("../images/pattern-gray.svg");
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.top-releases .pattern::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, color-stop(52.85%, rgba(255, 255, 255, 0)), color-stop(92.5%, white));
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 52.85%, white 92.5%);
+  z-index: -1;
 }
 /*# sourceMappingURL=styles.css.map */
