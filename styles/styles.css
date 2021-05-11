@@ -414,6 +414,7 @@ button {
           flex: 1 1 20rem;
   -webkit-box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
           box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+  margin-bottom: 8rem;
 }
 
 .top-releases .scroll-wrapper .inner-scroll-wrapper .top-releases-row .release .controls {
