@@ -49,6 +49,10 @@ a {
   color: #2c2c2c;
 }
 
+img {
+  display: block;
+}
+
 button {
   background: transparent;
   -webkit-box-shadow: none;
@@ -377,6 +381,7 @@ button {
 }
 
 .top-releases .scroll-wrapper .inner-scroll-wrapper {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,6 +392,7 @@ button {
 }
 
 .top-releases .scroll-wrapper .inner-scroll-wrapper .top-releases-row {
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,10 +404,49 @@ button {
 }
 
 .top-releases .scroll-wrapper .inner-scroll-wrapper .top-releases-row .release {
-  padding: 0 4rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  position: relative;
+  margin: 0 10rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  -webkit-box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+.top-releases .scroll-wrapper .inner-scroll-wrapper .top-releases-row .release .controls {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  text-align: center;
+  padding: 0 1rem 1rem;
+  overflow: hidden;
+}
+
+.top-releases .scroll-wrapper .inner-scroll-wrapper .top-releases-row .release .controls .release-info {
+  text-align: left;
+  color: white;
 }
 
 .top-releases img {
-  width: 300px;
+  width: 400px;
+}
+
+@media screen and (max-width: 1335px) {
+  html {
+    font-size: 53%;
+  }
+  .top-releases .scroll-wrapper .inner-scroll-wrapper .top-releases-row {
+    width: 100%;
+  }
+  .top-releases img {
+    width: 300px;
+  }
+  .top-releases-row {
+    width: 10%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
