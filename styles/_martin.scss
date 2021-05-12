@@ -7,12 +7,15 @@
 
   .martin-wrapper {
     position: relative;
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    margin-left: 10vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    padding: 0 10rem;
 
     .martin-image {
-      width: 600px;
+      width: 400px;
       img {
         object-fit: cover;
         width: 100%;
@@ -21,22 +24,20 @@
     }
 
     .signature {
-      position: absolute;
-      top: 100px;
-      left: 500px;
-      padding: 4rem;
-      width: 80rem;
+      position: relative;
+      padding: 2rem;
+      max-width: calc(40vw + 4px);
       background-color: goldenrod;
 
-      h2 {
-          color: white;
-          display: inline;
-          &::after {
-              content: "-";
-              display: inline-block;
-              width: 5rem;
-              margin-left: 2rem;
-          }
+      h3 {
+        color: white;
+        display: inline;
+        &::after {
+          content: "-";
+          display: inline-block;
+          width: 4rem;
+          margin-left: 2rem;
+        }
       }
 
       .autograph {

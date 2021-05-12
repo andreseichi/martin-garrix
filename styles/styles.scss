@@ -13,27 +13,27 @@ $gray-text: #2c2c2c;
 @import "top-releases";
 @import "martin";
 
-// // Mobile Tablet
-// @media screen and (max-width: 1335px) {
-//   html {
-//     font-size: 53%;
-//   }
+// Mobile Tablet
+@media screen and (max-width: 1335px) {
+  html {
+    font-size: 53%;
+  }
 
-//   .top-releases {
-//     .scroll-wrapper {
-//       .inner-scroll-wrapper {
-//         .top-releases-row {
-//             width: 100%;
-//         }
-//       }
-//     }
+  .top-releases {
+    .scroll-wrapper {
+      .inner-scroll-wrapper {
+        .top-releases-row {
+            width: 100%;
+        }
+      }
+    }
 
-//     img {
-//         width: 300px;
-//     }
-//   }
+    img {
+        width: 300px;
+    }
+  }
 
-//   .top-releases-row {
-//     width: 10%;
-//   }
-// }
+  .top-releases-row {
+    width: 10%;
+  }
+}
