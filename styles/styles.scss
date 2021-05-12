@@ -23,17 +23,28 @@ $gray-text: #2c2c2c;
     .scroll-wrapper {
       .inner-scroll-wrapper {
         .top-releases-row {
-            width: 100%;
+          width: 100%;
         }
       }
     }
 
     img {
-        width: 300px;
+      width: 300px;
     }
   }
 
   .top-releases-row {
     width: 10%;
+  }
+}
+
+// Mobile Smartphone
+@media screen and (max-width: 755px) {
+  html {
+    font-size: 45%;
+  }
+
+  .hero-img {
+      left: 0;
   }
 }
