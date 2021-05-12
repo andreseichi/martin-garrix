@@ -44,6 +44,12 @@ $gray-text: #2c2c2c;
     font-size: 45%;
   }
 
+  .navigation {
+      .menu-text {
+          display: none;
+      }
+  }
+
   .hero-img {
       left: 0;
   }

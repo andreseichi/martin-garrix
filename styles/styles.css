@@ -552,6 +552,9 @@ button {
   html {
     font-size: 45%;
   }
+  .navigation .menu-text {
+    display: none;
+  }
   .hero-img {
     left: 0;
   }
