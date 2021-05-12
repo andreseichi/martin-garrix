@@ -473,4 +473,59 @@ button {
   background: linear-gradient(270deg, rgba(255, 255, 255, 0) 52.85%, white 92.5%);
   z-index: -1;
 }
+
+.martin {
+  min-height: 80vh;
+  position: relative;
+  padding-top: 10vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #161413;
+}
+
+.martin .martin-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 10vw;
+}
+
+.martin .martin-wrapper .martin-image {
+  width: 600px;
+}
+
+.martin .martin-wrapper .martin-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.martin .martin-wrapper .signature {
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  padding: 4rem;
+  width: 80rem;
+  background-color: goldenrod;
+}
+
+.martin .martin-wrapper .signature h2 {
+  color: white;
+  display: inline;
+}
+
+.martin .martin-wrapper .signature h2::after {
+  content: "-";
+  display: inline-block;
+  width: 5rem;
+  margin-left: 2rem;
+}
+
+.martin .martin-wrapper .signature .autograph {
+  display: inline-block;
+}
 /*# sourceMappingURL=styles.css.map */

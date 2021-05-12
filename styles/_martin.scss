@@ -1,0 +1,47 @@
+.martin {
+  min-height: 80vh;
+  position: relative;
+  padding-top: 10vh;
+  object-fit: cover;
+  background-color: #161413;
+
+  .martin-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10vw;
+
+    .martin-image {
+      width: 600px;
+      img {
+        object-fit: cover;
+        width: 100%;
+        // height: 500px;
+      }
+    }
+
+    .signature {
+      position: absolute;
+      top: 100px;
+      left: 500px;
+      padding: 4rem;
+      width: 80rem;
+      background-color: goldenrod;
+
+      h2 {
+          color: white;
+          display: inline;
+          &::after {
+              content: "-";
+              display: inline-block;
+              width: 5rem;
+              margin-left: 2rem;
+          }
+      }
+
+      .autograph {
+        display: inline-block;
+      }
+    }
+  }
+}
