@@ -1,5 +1,5 @@
-const client_id = `${process.env.CLIEN_ID}`;
-const client_secret = `${process.env.CLIENT_SECRET}`;
+const client_id = "1a4fd56c2f5247efb99f411614c20d4b";
+const client_secret = "8b73949f22714ea68bb275ca732f039f";
 
 const getToken = async () => {
   const url = "https://accounts.spotify.com/api/token";
