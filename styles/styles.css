@@ -533,6 +533,22 @@ button {
   display: inline-block;
 }
 
+.footer {
+  min-height: 40vh;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 24px;
+}
+
 @media screen and (max-width: 1335px) {
   html {
     font-size: 53%;
