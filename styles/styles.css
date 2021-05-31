@@ -549,6 +549,80 @@ button {
   padding-bottom: 24px;
 }
 
+.footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .socials .follow-me {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.footer .socials .socials-links {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .socials .socials-links li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #797979;
+  margin-right: -1px;
+}
+
+.footer .socials .socials-links li a {
+  padding: 20px;
+  height: 100%;
+  fill: white;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  -webkit-transition: all 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition: all 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.footer .socials .socials-links li a:hover {
+  fill: black;
+  background-color: white;
+}
+
+.footer .socials .socials-links li a .icon {
+  max-width: 32px;
+  max-height: 32px;
+}
+
 @media screen and (max-width: 1335px) {
   html {
     font-size: 53%;
